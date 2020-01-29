@@ -1,0 +1,3 @@
+#!/bin/sh
+python -m compileall /bin/HTTPServerPythonSource/
+update-rc.d -f task2.sh defaults

@@ -1,0 +1,10 @@
+Package: SimpleHTTPServerWithUpload
+Version: 1.0.0
+Architecture: all
+Essential: no
+Section: web
+Priority: optional
+Depends: python (>=2.3)
+Maintainer: lo1ol
+Installed-Size: 96
+Description: The simple HTTP server with upload button

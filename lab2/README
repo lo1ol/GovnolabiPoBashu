@@ -1,0 +1,5 @@
+чтобы собрать пакет
+dpkg -b pkg name_v.e.r_platform.deb
+чтобы добавиьть задание в крон
+crontab lo1ol_tab
+

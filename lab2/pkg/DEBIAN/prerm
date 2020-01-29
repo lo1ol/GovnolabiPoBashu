@@ -1,0 +1,5 @@
+#!/bin/sh
+if [ "$1" = "remove" ]; then
+rm -r /bin/HTTPServerPythonSource/
+update-rc.d -f task2.sh remove
+fi
