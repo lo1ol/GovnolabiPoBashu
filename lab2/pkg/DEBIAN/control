@@ -4,7 +4,7 @@ Architecture: all
 Essential: no
 Section: web
 Priority: optional
-Depends: python (>=2.3)
+Depends: python (>=2.3), daemon
 Maintainer: lo1ol
 Installed-Size: 96
 Description: The simple HTTP server with upload button

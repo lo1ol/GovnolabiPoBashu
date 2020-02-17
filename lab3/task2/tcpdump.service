@@ -1,0 +1,13 @@
+[Unit]
+After=network.target
+ 
+[Service]
+Restart=always
+RestartSec=30
+Environment="TCPDUMP_FORMAT=%%Y-%%m-%%d__%%H-%%M"
+ExecStartPre=/bin/mkdir -p /var/log/tcpdump/
+ExecStart=/usr/sbin/tcpdump -G 86400 -w '/var/log/tcpdump/dump_${TCPDUMP_FORMAT}.pcap' arp
+ExecStop=/bin/kill -s QUIT $MAINPID
+ 
+[Install]
+WantedBy=multi-user.target
